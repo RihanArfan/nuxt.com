@@ -42,4 +42,4 @@ jobs:
         id: deploy
         with:
           project-key: nuxt-com-ce6v
-          hub-url: https://arena-ourselves-foods-distant.trycloudflare.com
+          hub-url: https://bug-dana-ln-it.trycloudflare.com
