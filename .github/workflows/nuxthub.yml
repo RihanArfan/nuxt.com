@@ -6,7 +6,7 @@ jobs:
     name: "Deploy to NuxtHub"
     runs-on: ubuntu-latest
     environment:
-      name: ${{ github.ref == 'refs/heads/main' && 'production' || 'preview' }}
+      name: ${{ github.ref == 'refs/heads/production' && 'production' || 'preview' }}
       url: ${{ steps.deploy.outputs.deployment-url }}
     permissions:
       contents: read
@@ -41,4 +41,5 @@ jobs:
         uses: nuxt-hub/action@v1
         id: deploy
         with:
-          project-key: nuxt-com-ckjd
+          project-key: nuxt-com-ce6v
+          hub-url: https://arena-ourselves-foods-distant.trycloudflare.com
