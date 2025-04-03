@@ -1,5 +1,6 @@
 import type { ShowcaseList, Filter } from '../types'
 
+
 export const useShowcase = () => {
   const route = useRoute()
   const router = useRouter()
